@@ -13,10 +13,12 @@ public class CrazyCatLady {
 		int intCat = Integer.parseInt(cats);
 		if(intCat >= 3) {
 			JOptionPane.showMessageDialog(null, "You have the right amount of cat.");
-		}else if(intCat <= 1) {
-			
-		}else {
-			
+		}else if(intCat == 2 ) {
+			playVideo("https://www.youtube.com/watch?v=KbM0W69pKtU");
+		}else if(intCat == 1 ) {
+			playVideo("https://www.youtube.com/watch?v=KbM0W69pKtU");
+		}else if(intCat == 0) {
+			playVideo("https://www.youtube.com/watch?v=ZJT9CeEhM10");
 		}
 		// 2. Convert their answer into an int
 		// 3. If they have 3 or more cats, tell them they are a crazy cat lady

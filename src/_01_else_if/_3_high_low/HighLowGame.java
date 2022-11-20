@@ -9,19 +9,24 @@ public class HighLowGame {
 
 	public static void main(String[] args) {
 		// 3. Change this line to give you a random number between 1 - 100. 
-		for (int i=0; i<10; i++) {
+		
 		int random = new Random().nextInt(100 - 1 + 1) + 1;
 		System.out.println("" + random);
 		// 2. Print out the random variable above
 		
 		// 11. Repeat steps 1 to 10 ten times
-		
+		for (int i=0; i<10; i++) {
 			// 1. Ask the user for a guess using a pop-up window, and save their response 
 String numberGuess = JOptionPane.showInputDialog("Please guess a number between 1 and 100");
 int guess = Integer.parseInt(numberGuess);
 			// 4. Convert the users’ answer to an int (Integer.parseInt(string))
 			if(guess == random) {
-				
+				JOptionPane.showMessageDialog(null, "Hurray, you win!");
+				System.exit(0);
+			} else if(guess > random) {
+				JOptionPane.showMessageDialog(null, "You guessed too high.");
+			} else if(guess < random) {
+				JOptionPane.showMessageDialog(null, "You guessed too low.");
 			}
 			// 5. if the guess is correct
 				// 6. Win

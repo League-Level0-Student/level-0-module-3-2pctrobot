@@ -5,9 +5,16 @@ void setup() {
      background(160, 160, 160);
      drawFlower(350, 100);
 }
-
+int bee = 0;
 void draw() {
-  
+  while(bee < 250){
+  fill(#000000);
+  ellipse(50+bee,50+bee,50,50);
+  fill(#fbff00);
+  ellipse(65+bee,65+bee,50,50);
+  bee+=30;
+  }
+  drawBeeFace(50+bee,50+bee);
 // First run the program and you should see a flower.  
   
   
